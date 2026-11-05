@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="icon" type="image/png" href="./IMAGENS/Logo-GITHUB.png">
+    <link rel="icon" type="image/png" href="./IMAGENS/Logo-GITHUB.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400&display=swap"
       rel="stylesheet"
@@ -17,19 +17,37 @@
     <header class="header" id="header">
       <div class="container">
         <nav class="nav">
-          <!-- EDITÁVEL: Nome da academia -->
-          <img src="./IMAGENS/Logo-png.png" alt="" class="logo" />
+          <img src="./IMAGENS/Logo-png.png" alt="Logo IFCode" class="logo" />
+
+          <!-- MENU DE NAVEGAÇÃO -->
           <ul class="nav-menu" id="navMenu">
-            <li><a class="INI" href="#início">INÍCIO</a></li>
-            <li><a href="#servicos">ESPECIALIDADES</a></li>
-            <li><a href="#sobre">SOBRE</a></li>
-            <li><a href="#portfolio">DESTAQUE</a></li>
-            <!-- <li><a href="#contato">CONTATO</a></li> -->
+            <li>
+              <a class="INI" href="#início" onclick="toggleMenu()">INÍCIO</a>
+            </li>
+            <li>
+              <a href="#servicos" onclick="toggleMenu()">ESPECIALIDADES</a>
+            </li>
+            <li><a href="#sobre" onclick="toggleMenu()">SOBRE</a></li>
+            <li><a href="#portfolio" onclick="toggleMenu()">DESTAQUE</a></li>
           </ul>
-          <button onclick="window.open('https:wa.me/554792514023', '_blank')" class="BTN-Topo">FALE CONOSCO</button>
+
+          <button
+            onclick="window.open('https://wa.me/554792514023', '_blank')"
+            class="BTN-Topo"
+          >
+            FALE CONOSCO
+          </button>
+
+          <!-- BOTÃO HAMBÚRGUER (Aparece apenas no celular) -->
+          <div class="menu-toggle" id="mobile-menu" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </nav>
       </div>
     </header>
+
     <div class="hero-section">
       <div class="tech-lines-bg">
         <img
@@ -42,9 +60,7 @@
       </div>
 
       <section class="hero-container" id="início">
-        <!-- Conteúdo do Texto -->
         <div class="hero-content">
-          <!-- Luz atrás das escritas -->
           <div class="text-glow"></div>
 
           <div class="hero-tag">
@@ -66,22 +82,31 @@
 
           <div class="hero-buttons">
             <a href="#portfolio" class="btn-primary">
-            <span>VER PORTFÓLIO</span>
-            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"          stroke-linecap="round" stroke-linejoin="round">
-            <line x1="3" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 7 19 12 12 17"></polyline>
-            </svg>
-            </a> <!-- btn-primary -->
-            <button onclick="window.open('https:wa.me/554792514023', '_blank')" class="btn-secondary">INICIAR PROJETO</button>
+              <span>VER PORTFÓLIO</span>
+              <svg
+                class="btn-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="3" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 7 19 12 12 17"></polyline>
+              </svg>
+            </a>
+            <button
+              onclick="window.open('https://wa.me/554792514023', '_blank')"
+              class="btn-secondary"
+            >
+              INICIAR PROJETO
+            </button>
           </div>
         </div>
 
-        <!-- Logo Flutuante -->
         <div class="hero-logo-wrapper">
-          <!-- A luz fica aqui dentro -->
           <div class="hero-glow"></div>
-
-          <!-- A imagem fica por cima da luz -->
           <img
             src="./IMAGENS/Logo-png.png"
             alt="IF Code & Design Logo"
@@ -96,21 +121,15 @@
           >SYSTEM STATUS: <strong class="status-online">ONLINE</strong></span
         >
       </div>
-      <!-- system-status-badge-->
 
       <div class="cyber-social-dock">
-        <!-- Linha conectora vertical neon -->
         <div class="dock-connector"></div>
-
-        <!-- Container Glassmorphism com borda RGB -->
         <div class="dock-card">
           <div class="dock-header">
             <span class="dock-dot"></span>
             <span class="dock-title">SOCIAL_NETWORKS</span>
           </div>
-
           <div class="dock-links">
-            <!-- Instagram -->
             <a
               href="https://instagram.com/ifcodedesign/"
               target="_blank"
@@ -140,19 +159,12 @@
               <span class="cyber-tooltip">INSTAGRAM // CHAT</span>
             </a>
 
-            <!-- WhatsApp -->
             <a
               href="https://wa.me/554792514023"
               target="_blank"
               class="cyber-btn"
               data-label="WHATSAPP"
             >
-            <!-- <a
-              href="https://web.whatsapp.com/5547926514023"
-              target="_blank"
-              class="cyber-btn"
-              data-label="WHATSAPP"
-            > -->
               <svg viewBox="0 0 24 24" class="cyber-icon">
                 <path
                   d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
@@ -166,7 +178,6 @@
               <span class="cyber-tooltip">WHATSAPP // CHAT</span>
             </a>
 
-            <!-- YouTube -->
             <a
               href="https://www.youtube.com/@IFCodeDesign"
               target="_blank"
@@ -190,12 +201,8 @@
           </div>
         </div>
       </div>
-      <!-- hero-section -->
     </div>
-    <!-- hero-section -->
 
-    <!-- Seção Principal -->
-    <!-- Seção NOSSOS SERVIÇOS / ESPECIALIDADES -->
     <section class="services-section" id="servicos">
       <div class="container">
         <div class="subtitle">O QUE FAZEMOS</div>
@@ -204,9 +211,7 @@
           <span class="gradient-text">ESPECIALIDADES</span>
         </h2>
 
-        <!-- Os 3 Caixotes de Serviços -->
         <div class="blocosEspecialidades">
-          <!-- Card 1: Landing Pages -->
           <div class="service-card">
             <div class="card-top">
               <div class="icon-box">
@@ -235,7 +240,6 @@
             </div>
           </div>
 
-          <!-- Card 2: Websites Institucionais -->
           <div class="service-card">
             <div class="card-top">
               <div class="icon-box">
@@ -261,7 +265,6 @@
             </div>
           </div>
 
-          <!-- Card 3: Agentes de IA -->
           <div class="service-card">
             <div class="card-top">
               <div class="icon-box">
@@ -289,15 +292,11 @@
             </div>
           </div>
         </div>
-        <!-- Fim de .blocosEspecialidades -->
       </div>
-      <!-- Fim de .container -->
     </section>
 
-    <!-- SEÇÃO SOBRE A IFCODE -->
     <section class="about-section" id="sobre">
       <div class="about-container">
-        <!-- Lado Esquerdo: Conteúdo e Texto -->
         <div class="about-content">
           <div class="subtitle">— QUEM SOMOS NÓS</div>
           <h2 class="title">
@@ -309,7 +308,7 @@
             A <strong>IFCode & Design</strong> nasceu movida pela enorme paixão
             por resolver problemas complexos através de tecnologia inteligente e
             design estratégico. Nosso propósito é desenvolver sistemas modernos
-            e eficientes que turbinam o crescimento de empresas e pequenos
+            e eficientes que turbINAm o crescimento de empresas e pequenos
             negócios no ambiente digital.
           </p>
 
@@ -320,7 +319,6 @@
             tecnológica que acelera o seu negócio.
           </p>
 
-          <!-- Grade de Métricas / Indicadores de Impacto -->
           <div class="about-metrics">
             <div class="metric-card">
               <span class="metric-number">100%</span>
@@ -336,7 +334,6 @@
             </div>
           </div>
 
-          <!-- Tech Badges Atualizadas (Apenas as 3 solicitadas) -->
           <div class="tech-stack">
             <span class="tech-badge">Agentes de IA</span>
             <span class="tech-badge">Landing Pages</span>
@@ -344,15 +341,12 @@
           </div>
         </div>
 
-        <!-- Lado Direito: Moldura e Imagem sem a badge verde -->
         <div class="about-image-wrapper">
           <div class="cyber-frame">
             <div class="corner-tl"></div>
             <div class="corner-tr"></div>
             <div class="corner-bl"></div>
             <div class="corner-br"></div>
-            <div class="scanline"></div>
-
             <img
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80"
               alt="IFCode & Design Workspace"
@@ -363,7 +357,6 @@
       </div>
     </section>
 
-    <!-- SEÇÃO PORTFÓLIO / PROJETOS -->
     <section class="portfolio-section" id="portfolio">
       <div class="portfolio-container">
         <div class="portfolio-header">
@@ -374,11 +367,8 @@
           </h2>
         </div>
 
-        <!-- Grade de Projetos -->
         <div class="portfolio-grid">
-          <!-- CARD PROJETO 1 -->
           <div class="portfolio-card">
-            <!-- Substitua a URL abaixo pelo print completo da página do seu projeto 1 -->
             <div
               class="project-banner"
               style="
@@ -386,7 +376,7 @@
               "
             >
               <div class="overlay">
-                <h3 class="project-title">Projetos Virtudes</Virtudes></h3>
+                <h3 class="project-title">Projetos Virtudes</h3>
                 <p class="project-category">Landing Page</p>
                 <a
                   href="https://projetovirtudes.ong.br/"
@@ -411,9 +401,7 @@
             </div>
           </div>
 
-          <!-- CARD PROJETO 2 -->
           <div class="portfolio-card">
-            <!-- Substitua a URL abaixo pelo print completo da página do seu projeto 2 -->
             <div
               class="project-banner"
               style="
@@ -446,9 +434,7 @@
             </div>
           </div>
 
-          <!-- CARD PROJETO 3 -->
           <div class="portfolio-card">
-            <!-- Substitua a URL abaixo pelo print completo da página do seu projeto 3 -->
             <div
               class="project-banner"
               style="
@@ -484,10 +470,8 @@
       </div>
     </section>
 
-    <!-- RODAPÉ DA IFCODE & DESIGN -->
     <footer class="main-footer">
       <div class="footer-container">
-        <!-- Coluna 1: Logo e Descrição -->
         <div class="footer-brand">
           <h2 class="footer-logo">
             IF<span class="highlight">CODE</span>
@@ -500,7 +484,6 @@
           </p>
         </div>
 
-        <!-- Coluna 2: Navegação Rápida (Em Lista Vertical) -->
         <div class="footer-links">
           <h3 class="footer-title">NAVEGAÇÃO</h3>
           <ul>
@@ -511,11 +494,9 @@
           </ul>
         </div>
 
-        <!-- Coluna 3: Redes Sociais (Todas em 1 Linha com Gradiente da Logo) -->
         <div class="footer-socials">
           <h3 class="footer-title">REDES SOCIAIS</h3>
           <div class="social-icons">
-            <!-- Definição do Gradiente da Logo para os Ícones -->
             <svg
               style="width: 0; height: 0; position: absolute"
               aria-hidden="true"
@@ -533,7 +514,6 @@
               </linearGradient>
             </svg>
 
-            <!-- GitHub -->
             <a
               href="https://github.com/seu-usuario"
               target="_blank"
@@ -554,7 +534,6 @@
               </svg>
             </a>
 
-            <!-- Instagram -->
             <a
               href="https://instagram.com/ifcodedesign/"
               target="_blank"
@@ -591,7 +570,6 @@
               </svg>
             </a>
 
-            <!-- WhatsApp -->
             <a
               href="https://wa.me/554792514023"
               target="_blank"
@@ -612,7 +590,6 @@
               </svg>
             </a>
 
-            <!-- YouTube (Substituindo o LinkedIn) -->
             <a
               href="https://www.youtube.com/@IFCodeDesign"
               target="_blank"
@@ -641,10 +618,18 @@
         </div>
       </div>
 
-      <!-- Direitos Autorais -->
       <div class="footer-bottom">
         <p>&copy; 2026 IFCode & Design. Todos os direitos reservados.</p>
       </div>
     </footer>
+
+    <script>
+      function toggleMenu() {
+        const navMenu = document.getElementById("navMenu");
+        const mobileMenu = document.getElementById("mobile-menu");
+        navMenu.classList.toggle("active");
+        mobileMenu.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
