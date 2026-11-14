@@ -28,7 +28,7 @@
 /* ============================================================
    RESPONSIVIDADE DO MENU HAMBÚRGUER (CELULARES E TABLETS)
    ============================================================ */
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .menu-toggle {
     margin-top: 35px;
     display: flex; /* Mostra o botão hambúrguer em telas menores */
